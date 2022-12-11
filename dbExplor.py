@@ -11,7 +11,7 @@ __status__ = 'Alpha'
 import pandas as pd
 import sqlite3
 
-path = r'C:\Users\rboncheff\Documents\iMatrix\PATIENT\000001\000001_patient.db'
+path = r'C:\Users\dfurt\Documents\iMatrix\PATIENT\000001\000001_patient.db'
 
 # connects to the patient.db
 con = sqlite3.connect(path)

@@ -22,8 +22,8 @@ Before running this script:
     Set eventPath to the location of your SD card
 '''
 
-dbPath = r'C:\Users\rboncheff\Documents\iMatrix\PATIENT\000001\000001_patient.db'
-sdPath = r'C:\Users\rboncheff\Desktop\APAP\THERAPY\RECORD'
+dbPath = r'C:\Users\dfurt\Documents\iMatrix\PATIENT\000001\000001_patient.db'
+sdPath = r'G:\THERAPY\RECORD'
 
 from detailsPuller import detailsPuller
 from wavePuller import wavePuller

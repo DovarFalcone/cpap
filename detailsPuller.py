@@ -117,5 +117,5 @@ def detailsPuller(path):
     dataSet.to_csv(csvName)
 
 if __name__ == '__main__':
-    path = r'C:\Users\rboncheff\Documents\iMatrix\PATIENT\000001\000001_patient.db'
+    path = r'C:\Users\dfurt\Documents\iMatrix\PATIENT\000001\000001_patient.db'
     detailsPuller(path)

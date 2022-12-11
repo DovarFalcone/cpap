@@ -211,5 +211,5 @@ def eventPuller(path):
     events.to_csv(resultPath)
 
 if __name__ == '__main__':
-    path = r'C:\Users\rboncheff\Desktop\APAP\THERAPY\RECORD'
+    path = r'C:\Users\dfurt\Desktop\APAP\THERAPY\RECORD'
     eventPuller(path)

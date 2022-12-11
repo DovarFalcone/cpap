@@ -100,5 +100,5 @@ def wavePuller(path):
             results.to_csv(csvName, mode = 'a', index = False)
 
 if __name__ == '__main__':
-    path = r'C:\Users\rboncheff\Documents\iMatrix\PATIENT\000001\000001_patient.db'
+    path = r'C:\dfurt\rboncheff\Documents\iMatrix\PATIENT\000001\000001_patient.db'
     wavePuller(path)
