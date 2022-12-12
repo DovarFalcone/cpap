@@ -11,6 +11,7 @@ __status__ = 'Alpha'
 import struct
 import pandas as pd
 import sqlite3
+import datetime
 
 def detailsPuller(path):
 
@@ -113,9 +114,15 @@ def detailsPuller(path):
             dataSet = dataSet.merge(metric, how = 'outer', on = ['timestamp', 'date'])
 
     # writes the dataset to a csv for use elsewhere
-    csvName = 'detailsData' + str(pd.datetime.now()) + '.csv'
-    dataSet.to_csv(csvName)
+    # csvName = 'detailsData' + str(datetime.datetime.now()) + '.csv'
+    # csvName = csvName.replace(':', '_')
+    # csvName = csvName.replace('/', '-')
 
+    # dataSet.to_csv(csvName)
+    detailsdf = pd.DataFrame(dataSet)
+    print('detailsdf created')
+    return(detailsdf)
+    
 if __name__ == '__main__':
     path = r'C:\Users\dfurt\Documents\iMatrix\PATIENT\000001\000001_patient.db'
     detailsPuller(path)
