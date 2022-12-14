@@ -207,14 +207,14 @@ def eventPuller(path):
                                       'Usage':'Usage_sec',
                                       'Duration, sec':'Duration_sec'})
 
-    # resultPath = 'eventsHistory' + str(datetime.datetime.now()) + '.csv'
-    # resultPath = resultPath.replace(':', '_')
-    # resultPath = resultPath.replace('/', '-')
-    # events.to_csv(resultPath)
+    #resultPath = 'eventsHistory' + str(datetime.datetime.now()) + '.csv'
+    #resultPath = resultPath.replace(':', '_')
+    #resultPath = resultPath.replace('/', '-')
+    #events.to_csv(resultPath)
     pd.DataFrame(events)
     print('eventsdf created')
-    return(eventsdf)
+    return(events)
 
 if __name__ == '__main__':
-    path = r'G:\THERAPY\RECORD'
+    path = r'E:\testprojects\cpapDataSDCARD\THERAPY\RECORD'
     eventPuller(path)

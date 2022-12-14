@@ -23,7 +23,7 @@ Before running this script:
 '''
 
 dbPath = r'C:\Users\dfurt\Documents\iMatrix\PATIENT\000001\000001_patient.db'
-sdPath = r'G:\THERAPY\RECORD'
+sdPath = r'E:\testprojects\cpapDataSDCARD\THERAPY\RECORD'
 
 from detailsPuller import detailsPuller
 from wavePuller import wavePuller
