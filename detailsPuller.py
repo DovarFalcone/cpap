@@ -114,11 +114,11 @@ def detailsPuller(path):
             dataSet = dataSet.merge(metric, how = 'outer', on = ['timestamp', 'date'])
 
     # writes the dataset to a csv for use elsewhere
-    # csvName = 'detailsData' + str(datetime.datetime.now()) + '.csv'
-    # csvName = csvName.replace(':', '_')
-    # csvName = csvName.replace('/', '-')
+    csvName = 'detailsData' + str(datetime.datetime.now()) + '.csv'
+    csvName = csvName.replace(':', '_')
+    csvName = csvName.replace('/', '-')
 
-    # dataSet.to_csv(csvName)
+    dataSet.to_csv(csvName)
     detailsdf = pd.DataFrame(dataSet)
     print('detailsdf created')
     return(detailsdf)

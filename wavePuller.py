@@ -29,7 +29,7 @@ def wavePuller(path):
 
     # singleDate = None will pull the entire dataset
     # singleDate = '2022-08-01' will pull only 2022-08-01
-    singleDate = '2022-08-01'
+    singleDate = None
 
     # grabs each metric and creates a waveData_metric csv 
     # note that this is different than with detailTable algo
@@ -97,11 +97,13 @@ def wavePuller(path):
             results[str(labelDict[rec['label']])] = recData
 
             # writes the dataset to a csv for use elsewhere
-            csvName = 'waveData_' + labelDesc + str(datetime.datetime.now())
+            currentDateAndTime = datetime.datetime.now()
+            csvName = 'waveData_' + labelDesc + str(currentDateAndTime.strftime("%H")) + '.csv'
             csvName = csvName.replace(':', '_')
             csvName = csvName.replace('/', '-')
 
-            results.to_csv(csvName, mode = 'a', index = False)
+            path ='E:\\GitHub\\cpap\\wave\\'
+            results.to_csv(path + csvName, mode = 'a', index = False)
             #resultsdf = pd.DataFrame(results)
             #print('resultsdf created')
             #return(resultsdf)   
