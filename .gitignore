@@ -1,7 +1,9 @@
-*.csv
 __pycache__
 *.sql
 sqlcleaning.txt
-datasets
-wave
-db_copy
+/datasets
+/wave
+/db_copy
+creds.yaml
+appv1
+mysite
